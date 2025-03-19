@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  #yesBtn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  #noBtn {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+  }
+  #fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+  }
+  /* Perbaikan tampilan teks BAGUS */
+  #resultText {
+    position: absolute;
+    font-size: 64px;
+    color: #fff;           /* Warna putih agar kontras */
+    font-weight: bold;     /* Teks ditebalkan */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Efek bayangan agar lebih tajam */
+    display: none;
+    z-index: 101;
+  }
